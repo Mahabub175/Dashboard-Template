@@ -1,5 +1,6 @@
 import { Progress } from "antd";
 import Image from "next/image";
+import { MdOutlineContentCopy } from "react-icons/md";
 
 export const dataSource = [
   {
@@ -98,6 +99,12 @@ export const columns = [
     title: "Employment ID",
     dataIndex: "employmentId",
     key: "employmentId",
+    render: (text) => (
+      <div className="flex items-center gap-2">
+        <span className="font-semibold">{text}</span>
+        <MdOutlineContentCopy />
+      </div>
+    ),
   },
   {
     title: "Type Of Hire",
@@ -142,9 +149,9 @@ export const columns = [
     key: "status",
     align: "right",
     render: (text) => (
-      <div className="flex items-center gap-2">
-        <span className="font-semibold">{text}</span>
-      </div>
+      <button className="bg-primary rounded-lg text-lg font-bold px-4">
+        {text}
+      </button>
     ),
   },
 ];

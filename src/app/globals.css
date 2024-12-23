@@ -19,6 +19,11 @@
   color: #000 !important;
 }
 
+.ant-table-content {
+  max-width: 1800px !important;
+  overflow-x: auto !important;
+}
+
 .sidebar-toggle-button {
   display: none;
 }
