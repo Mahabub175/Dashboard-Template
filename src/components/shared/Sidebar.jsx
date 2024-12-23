@@ -54,27 +54,16 @@ const Sidebar = () => {
       </Sider>
 
       <div className="sidebar-toggle-button">
-        <Button
-          className="-mr-1 bg-white border border-gray-200 rounded-full text-primary"
-          type="primary"
-          icon={
-            collapsed ? (
-              <TbArrowBadgeRight className="text-2xl" />
-            ) : (
-              <TbArrowBadgeRight className="rotate-180 text-2xl" />
-            )
-          }
+        <button
+          className="-mr-1 bg-primary border border-gray-200 rounded-full text-black absolute top-0"
           onClick={() => setCollapsed(!collapsed)}
-          style={{
-            fontSize: "16px",
-            position: "absolute",
-            right: -25,
-            top: -10,
-            zIndex: 1000,
-            padding: "10px",
-            borderRadius: "9999px",
-          }}
-        />
+        >
+          {collapsed ? (
+            <TbArrowBadgeRight className="text-2xl" />
+          ) : (
+            <TbArrowBadgeRight className="rotate-180 text-2xl" />
+          )}
+        </button>
       </div>
     </div>
   );

@@ -14,9 +14,7 @@ export const sidebarItemsGenerator = (items, pathname) => {
           label: (
             <Link
               href={`/${child.path}`}
-              className={`hover:text-primary font-semibold text-sm text-textColor ${
-                pathname === `/${child.path}` ? "text-primary" : ""
-              }`}
+              className={`hover:text-primary font-semibold text-sm text-textColor`}
             >
               {child.name}
             </Link>
@@ -31,9 +29,7 @@ export const sidebarItemsGenerator = (items, pathname) => {
       label: (
         <Link
           href={`/${item.path}`}
-          className={`hover:text-primary text-textColor font-semibold text-sm ${
-            pathname === `/${item.path}` ? "text-primary" : ""
-          }`}
+          className={`hover:text-primary text-textColor font-semibold text-sm `}
         >
           {item.name}
         </Link>

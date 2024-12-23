@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9f27e !important;
+}
+
+.ant-menu-item-selected {
+  color: #000 !important;
+}
+
 .sidebar-toggle-button {
   display: none;
 }

@@ -10,12 +10,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#D9F27E",
-        primaryLight: "var(--secondaryColor)",
-        orange: "#F97316",
-        danger: "#FB564B",
         textColor: "#70747B",
         grey: "#f1f1f1",
-        primaryDark: "#002244",
       },
       boxShadow: {
         xl: "0 0 10px 5px #e5e5e5",

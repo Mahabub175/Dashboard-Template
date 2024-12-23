@@ -66,6 +66,7 @@ export const sidebarRoutes = [
     name: "Notifications",
     path: "notifications",
     icon: FaRegBell,
+    class: "!mt-20",
   },
   {
     name: "Settings",
