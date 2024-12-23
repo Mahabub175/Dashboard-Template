@@ -18,7 +18,7 @@ const Profile = () => {
   };
 
   return (
-    <div className="flex justify-between items-center pb-2 -mx-10 lg:mx-0">
+    <div className="flex justify-between items-center border-b px-5 py-4 bg-white">
       <div className="flex items-center">
         <Link href={"/"}>
           <Image
@@ -34,32 +34,32 @@ const Profile = () => {
         <AutoComplete placeholder="Search" size="large" className="!w-[30vw]" />
         <FaSearch className="absolute right-2 top-1/2 -translate-y-1/2 text-primary text-xl" />
       </div>
-      <Segmented
-        value={theme}
-        className="!hidden !lg:block"
-        style={{ marginBottom: 8 }}
-        onChange={handleThemeChange}
-        options={[
-          {
-            label: (
-              <div className="flex items-center">
-                <SunOutlined className="mr-2" />
-                Light
-              </div>
-            ),
-            value: "light",
-          },
-          {
-            label: (
-              <div className="flex items-center">
-                <MoonOutlined className="mr-2" />
-                Dark
-              </div>
-            ),
-            value: "dark",
-          },
-        ]}
-      />
+      <div className="hidden lg:block">
+        <Segmented
+          value={theme}
+          onChange={handleThemeChange}
+          options={[
+            {
+              label: (
+                <div className="flex items-center">
+                  <SunOutlined className="mr-2" />
+                  Light
+                </div>
+              ),
+              value: "light",
+            },
+            {
+              label: (
+                <div className="flex items-center">
+                  <MoonOutlined className="mr-2" />
+                  Dark
+                </div>
+              ),
+              value: "dark",
+            },
+          ]}
+        />
+      </div>
       <div className="flex items-center gap-5">
         <Avatar icon={<FaRegBell />} />
         <Avatar className="size-20 md:size-40" icon={<UserOutlined />} />

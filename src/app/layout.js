@@ -30,9 +30,7 @@ export default function RootLayout({ children }) {
       >
         <SystemProvider>
           <AntdRegistry>
-            <Header className="!bg-white border-b-2">
-              <Profile />
-            </Header>
+            <Profile />
             <Layout className="relative">
               <Sidebar />
               <Content
