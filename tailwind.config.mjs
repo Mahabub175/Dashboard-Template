@@ -1,15 +1,28 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    darkMode: "class",
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#D9F27E",
+        primaryLight: "var(--secondaryColor)",
+        orange: "#F97316",
+        danger: "#FB564B",
+        textColor: "#70747B",
+        grey: "#f1f1f1",
+        primaryDark: "#002244",
+      },
+      boxShadow: {
+        xl: "0 0 10px 5px #e5e5e5",
+      },
+      screens: {
+        sm: "580px",
+        md: "600px",
       },
     },
   },
