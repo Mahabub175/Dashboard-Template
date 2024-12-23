@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         <SystemProvider>
           <AntdRegistry>
             <Profile />
-            <Layout className="relative">
+            <Layout className="relative h-screen">
               <Sidebar />
               <Content
                 style={{
